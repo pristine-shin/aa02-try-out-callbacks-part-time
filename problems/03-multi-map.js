@@ -22,7 +22,15 @@ console.log(result3); // hi!!!!!
 *******************************************************************************/
 
 function multiMap(val, n, cb) {
-  // Your code here 
+  // Your code here
+  // while (n !== 0) {
+  //   val = cb(val);
+  //   n--;
+  // }
+  for (let i = 0; i < n; i++) {
+    val = cb(val);
+  }
+  return val;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
