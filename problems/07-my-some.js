@@ -24,7 +24,13 @@ console.log(result3);   // true
 *******************************************************************************/
 
 function mySome(array, cb) {
-    // Your code here 
+    // Your code here
+    for (let el of array) {
+        if (cb(el, array.indexOf(el))) {
+            return true;
+        }
+    }
+    return false;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
