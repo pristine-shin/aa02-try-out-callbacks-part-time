@@ -22,11 +22,13 @@ function greaterCallbackValue(val, cb1, cb2) {
   let firstResult = cb1(val);
   let secResult = cb2(val);
 
-  if (firstResult > secResult) {
-    return firstResult;
-  } else {
-    return secResult;
-  }
+  // if (firstResult > secResult) {
+  //   return firstResult;
+  // } else {
+  //   return secResult;
+  // }
+
+  return firstResult > secResult ? firstResult : secResult;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

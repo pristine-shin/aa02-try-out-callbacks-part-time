@@ -29,7 +29,15 @@ console.log(result4);   // false
 *******************************************************************************/
 
 function none(array, cb) {
-  // Your code here 
+  // let result = array.filter(el => {
+  //   return cb(el);
+  // })
+  // return (result.length === 0);
+
+  let result = array.every(el => {
+    return !cb(el);
+  });
+  return result;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
