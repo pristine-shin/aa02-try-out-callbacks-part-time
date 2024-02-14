@@ -38,7 +38,16 @@ console.log(result6);   // true
 *******************************************************************************/
 
 function one(array, cb) {
-  // Your code here 
+  // let result = [];
+  // array.forEach((el, i) => {
+  //   if (cb(el, i)) {
+  //     result.push(el);
+  //   }
+  // })
+  let result = array.filter((el, i) => {
+    return cb(el, i);
+  })
+  return (result.length === 1);
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
