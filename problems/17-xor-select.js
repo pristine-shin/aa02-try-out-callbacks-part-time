@@ -32,7 +32,10 @@ console.log(
 *******************************************************************************/
 
 let xorSelect = function(array, cb1, cb2) {
-  // Your code here 
+  let result = array.filter(el => {
+    return ((cb1(el) && !cb2(el)) || (!cb1(el) && cb2(el)))
+  })
+  return result;
 };
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
